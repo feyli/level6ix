@@ -1,0 +1,53 @@
+
+
+h1 {
+    display: block;
+    padding: 16px;
+    border: 2px solid #007bff;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 45;
+  }
+  .sous-titre {
+    font-size: 10;
+  }
+
+
+  body {
+    background: #121212;
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .grille {
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+  }
+  
+  .carre {
+    flex: 1 1 45%;
+    aspect-ratio: 1 / 1;
+    background-color: #222;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Ombre blanche */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .carre:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3); /* Ombre plus forte */
+  }
+  
