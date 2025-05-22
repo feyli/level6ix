@@ -1,6 +1,15 @@
 
+@import url('https://fonts.google.com/specimen/Quantico?preview.text=Tournoi%20de%20jeux-vid%C3%A9os&query=quantico&script=Latn&categoryFilters=Feeling:%2FExpressive%2FFuturistic');
+@font-face {
+  font-family: 'NeonOverdrive';
+  src: url('/fonts/Neon\ Overdrive.otf') format('opentype'),
+       url('/fonts/Neon\ Overdrive.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-h1 {
+
+  .Titre {
     display: block;
     padding: 16px;
     border: 2px solid #007bff;
@@ -9,9 +18,12 @@ h1 {
     font-family: Arial, sans-serif;
     text-align: center;
     font-size: 45;
+    color: #3C2272;
+    font-family: 'NeonOverdrive',sans-serif;
   }
   .sous-titre {
     font-size: 10;
+    font-family: 'Quantico';
   }
 
 
@@ -19,35 +31,41 @@ h1 {
     background: #121212;
     margin: 0;
     font-family: sans-serif;
+    color: white;
+    padding: 0;
+  }
+  
+  .section-carres {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 40px 20px;
   }
   
   .grille {
     display: flex;
-    gap: 5%;
+    gap: 10%;
     width: 100%;
     max-width: 1000px;
     justify-content: space-between;
+    flex-wrap: wrap; /* pour forcer wrap si écran trop petit */
   }
   
   .carre {
     flex: 1 1 45%;
     aspect-ratio: 1 / 1;
-    background-color: #222;
+    background-color: #3C2272;
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Ombre blanche */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     font-size: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
   }
   
   .carre:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3); /* Ombre plus forte */
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
   }
   
