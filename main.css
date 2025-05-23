@@ -35,13 +35,13 @@
     padding: 0;
     min-height: 100%;
     background: linear-gradient(to bottom, #371d6b, #913777);
-    padding-bottom: 400px;
   }
   
   .section-carres {
     display: flex;
     justify-content: center;
     padding: 40px 20px;
+    padding-bottom: 40vw;
   }
   
   .grille {
@@ -86,6 +86,7 @@
     color: white;
     font-size: 1.3rem;
     font-family: 'Quantico',sans-serif;
+    text-align: center;
 
   }
   
@@ -99,14 +100,116 @@
     padding: 10px;
   }
   
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #333;
+  a{
     color: white;
+    text-decoration: none;
+  }
+  
+  
+  
+  a:hover{
+    color: rgb(90, 92, 92);
+  }
+  
+  
+  
+  
+  .sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .sponsors-title{
+    font-size: 2.25rem;
+    margin-bottom: 10%;
+  }
+  
+  .sponsors img{
+    width: 40%;
+    height: auto;
+  }
+  
+  .sponsors div{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .buvette {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .buvette-title {
+    margin-top: 10%;
+    display: flex;
+    font-size: 2.25rem;
+    justify-content: center;
+  }
+  
+  
+  
+  .container-link-projects{
+    display: flex;
+    width: 20vw;
+    height: 60vh;
+    background-color: #4e4e4e;
+    margin-right:2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  
+    .container-link-projects:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    }
+  
+  
+  
+  .container-list-footer{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    height: 6vh;
+  
+  }
+  
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+    margin-bottom: 2%;
+  }
+
+  #footer-title{
+    font-size:2.625rem;
+    color: #c9c9c9;
+    margin-bottom: 2vw;
+  }
+  
+  
+  .container-link-footer{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    background-color: #242424;
+    margin-right:2%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(59, 59, 59);
+    font-size: 80%;
     text-align: center;
-    padding: 15px;
+  }
+  
+  
+  .container-link-footer:hover{
+    background-color:rgb(66, 66, 66);
   }
   
